@@ -10,7 +10,7 @@
 5. Meet Vastani (Ku2407u451)
 
  # Overview
- This project is an AI-based UPI fraud detection system that analyzes past transaction data (up to 300 data points) and identifies fraudulent transactions. The system uses machine learning models to classify transactions as "Fraud" or "Not Fraud."
+ - This project is an AI-based UPI fraud detection system that analyzes past transaction data (up to 300 data points) and identifies fraudulent transactions. The   system uses machine learning models to classify transactions as "Fraud" or "Not Fraud."
 
  ## Table of content
  1. Overview
@@ -82,17 +82,17 @@ AI_UPI_Fraud_Detection/
 
 ## Steps to Run the Project
 
-### Load Data
+1. Load Data
 
-1. The dataset transactions.csv contains transaction details such as:
+ - The dataset transactions.csv contains transaction details such as:
 
-- Transaction ID – Unique identifier for each transaction.
-- Sender ID & Receiver ID – IDs of the sender and receiver.
-- Amount – Transaction amount.
-- Location – The city or region where the transaction took place.
-- Time – Time of transaction.
-- Frequency – Number of transactions from the sender in a given period.
-- Fraud Label – Indicates whether the transaction is fraud (1) or not (0).
+ - Transaction ID – Unique identifier for each transaction.
+ - Sender ID & Receiver ID – IDs of the sender and receiver.
+ - Amount – Transaction amount.
+ - Location – The city or region where the transaction took place.
+ - Time – Time of transaction.
+ - Frequency – Number of transactions from the sender in a given period.
+ - Fraud Label – Indicates whether the transaction is fraud (1) or not (0).
 
 2️. Data Preprocessing
 
