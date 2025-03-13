@@ -1,5 +1,5 @@
 1. Load data
-2. data preprocessing
+2. Data Preprocessing
 3. feature selection 
 4. transaction error
 5. analyze fraud trends
