@@ -58,27 +58,27 @@ Python 3.9.13
 
 ## Project Structure
 AI_UPI_Fraud_Detection/
-│── data/
-│   ├── transactions.csv        # Main dataset (past transactions)
-│── models/
-│   ├── random_forest.pkl       # Saved Random Forest model
-│   ├── xgboost.pkl             # Saved XGBoost model
-│   ├── logistic_reg.pkl        # Saved Logistic Regression model
-│── src/
-│   ├── preprocess.py           # Data cleaning & feature engineering
-│   ├── feature_selection.py    # Selecting best fraud-related features
-│   ├── train_model.py          # Train ML models
-│   ├── evaluate_model.py       # Model performance evaluation
-│   ├── batch_fraud_detection.py # Detect fraud in multiple transactions
-│── visualization/
-│   ├── fraud_vs_nonfraud.png    # Fraud vs. Non-Fraud Transactions (Bar Chart)
-│   ├── fraud_vs_amount.png      # Fraud Transactions by Amount (Boxplot)
-│   ├── fraud_trend_over_time.png # Fraud Trend Over Time (Line Plot)
-│   ├── fraud_vs_amount_histogram.png # Transaction Amounts (Histogram)
-│   ├── fraud_location_heatmap.png # Fraud by Location (Heatmap)
-│   ├── fraud_percentage_pie.png  # Fraud Percentage (Pie Chart)
-│   ├── fraud_by_transaction_type.png # Fraud by Transaction Type (Bar Chart)
-│── README.md                   # Project documentation
+- data/
+    - transactions.csv        # Main dataset (past transactions)
+- models/
+   - random_forest.pkl       # Saved Random Forest model
+   - xgboost.pkl             # Saved XGBoost model
+   - logistic_reg.pkl        # Saved Logistic Regression model
+- src/
+   - preprocess.py           # Data cleaning & feature engineering
+   - feature_selection.py    # Selecting best fraud-related features
+   - train_model.py          # Train ML models
+   - evaluate_model.py       # Model performance evaluation
+   - batch_fraud_detection.py # Detect fraud in multiple transactions
+- visualization/
+   - fraud_vs_nonfraud.png    # Fraud vs. Non-Fraud Transactions (Bar Chart).
+   - fraud_vs_amount.png      # Fraud Transactions by Amount (Boxplot).
+   - fraud_trend_over_time.png # Fraud Trend Over Time (Line Plot).
+   - fraud_vs_amount_histogram.png # Transaction Amounts (Histogram.)
+   - fraud_location_heatmap.png # Fraud by Location (Heatmap).
+   - fraud_percentage_pie.png  # Fraud Percentage (Pie Chart).
+   - fraud_by_transaction_type.png # Fraud by Transaction Type (Bar Chart).
+  - README.md  # Project documentation
 
 ## Steps to Run the Project
 
