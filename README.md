@@ -85,14 +85,13 @@ AI_UPI_Fraud_Detection/
 1. Load Data
 
  - The dataset transactions.csv contains transaction details such as:
-
- - Transaction ID – Unique identifier for each transaction.
- - Sender ID & Receiver ID – IDs of the sender and receiver.
- - Amount – Transaction amount.
- - Location – The city or region where the transaction took place.
- - Time – Time of transaction.
- - Frequency – Number of transactions from the sender in a given period.
- - Fraud Label – Indicates whether the transaction is fraud (1) or not (0).
+     - Transaction ID – Unique identifier for each transaction.
+     - Sender ID & Receiver ID – IDs of the sender and receiver.
+     - Amount – Transaction amount.
+     - Location – The city or region where the transaction took place.
+     - Time – Time of transaction.
+     - Frequency – Number of transactions from the sender in a given period.
+     - Fraud Label – Indicates whether the transaction is fraud (1) or not (0).
 
 2️. Data Preprocessing
 
