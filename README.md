@@ -1,6 +1,6 @@
 # Project Name
 
-# AI-Based UPI Fraud Detection System (Past Transactions)
+# Fraud detection by using machine learning.
 
 # Team Members
 1. Mann Chavda (Ku2407u327)
@@ -10,22 +10,21 @@
 5. Meet Vastani (Ku2407u451)
 
  # Overview
- - This project is an AI-based UPI fraud detection system that analyzes past transaction data (up to 300 data points) and identifies fraudulent transactions. The   system uses machine learning models to classify transactions as "Fraud" or "Not Fraud."
+ - This project is an fraud detection by using machine learning that analyzes past transaction data (up to 300 data points) and identifies fraudulent transactions. The   system uses machine learning models to classify transactions as "Fraud" or "Not Fraud."
 
  ## Table of content
  1. Overview
  2. Requirements
- 3. Project Structure
- 4. Load Data
- 5. Data Preprocessing
- 6. Feature Selection
- 7. Transaction Error Handling
- 8. Analysing Fraud Trends
- 9. Predict Fraud Transactions
- 10. Model Evaluation
- 11. Model Training
- 12. Batch Fraud Detection
- 13. Fraud Visualisation
+ 3. Load Data
+ 4. Data Preprocessing
+ 5. Feature Selection
+ 6. Transaction Error Handling
+ 7. Analysing Fraud Trends
+ 8. Predict Fraud Transactions
+ 9. Model Evaluation
+ 10. Model Training
+ 11. Batch Fraud Detection(Visualize)
+ 12. Fraud Visualisation
 
 ## Requirements
 Python 3.9.13
@@ -44,7 +43,7 @@ Python 3.9.13
 - os
 
 ## Features
- ### Key Features of the AI-Based UPI Fraud Detection System:
+ ### Key Features of Fraud Detection by using machine learrning:
 1. Automated Fraud Detection – Uses machine learning models to detect fraudulent transactions.
 2. Batch Fraud Detection – Analyzes multiple transactions at once to identify fraud patterns
 3. Feature Selection for Better Accuracy – Uses optimized fraud-related transaction features.
@@ -55,30 +54,6 @@ Python 3.9.13
 8. Performance Evaluation of Models – Compares models using accuracy, precision, recall, and F1-score.
 9. Fraud Detection Based on Transaction Type & Amount – Analyzes fraud likelihood based on transaction behavior.
 10. Fraud Location Analysis – Identifies fraud-prone regions using location-based heatmaps.
-
-## Project Structure
-AI_UPI_Fraud_Detection/
-- data/
-    - transactions.csv        # Main dataset (past transactions)
-- models/
-   - random_forest.pkl       # Saved Random Forest model
-   - xgboost.pkl             # Saved XGBoost model
-   - logistic_reg.pkl        # Saved Logistic Regression model
-- src/
-   - preprocess.py           # Data cleaning & feature engineering
-   - feature_selection.py    # Selecting best fraud-related features
-   - train_model.py          # Train ML models
-   - evaluate_model.py       # Model performance evaluation
-   - batch_fraud_detection.py # Detect fraud in multiple transactions
-- visualization/
-   - fraud_vs_nonfraud.png    # Fraud vs. Non-Fraud Transactions (Bar Chart).
-   - fraud_vs_amount.png      # Fraud Transactions by Amount (Boxplot).
-   - fraud_trend_over_time.png # Fraud Trend Over Time (Line Plot).
-   - fraud_vs_amount_histogram.png # Transaction Amounts (Histogram.)
-   - fraud_location_heatmap.png # Fraud by Location (Heatmap).
-   - fraud_percentage_pie.png  # Fraud Percentage (Pie Chart).
-   - fraud_by_transaction_type.png # Fraud by Transaction Type (Bar Chart).
-  - README.md  # Project documentation
 
 ## Steps to Run the Project
 
@@ -133,27 +108,25 @@ AI_UPI_Fraud_Detection/
 - Train machine learning models using past transaction data.
 - Save trained models for future predictions.
 
-9️. Batch Fraud Detection
+9️. Batch Fraud Detection(
 
-- Use batch_fraud_detection.py to analyze multiple transactions at once and detect fraud efficiently.
+- Use batch_fraud_detection.py to analyze multiple transactions at once and detect fraud efficiently and create a predictions csv file after that csv file data will be shown into graphs and bar chart.
+- Fraud_percentage_pie.png – Fraud Percentage (Pie Chart).
+- Fraud_by_transaction_type.png – Fraud by Transaction Type (Bar Chart).
+- Fraud_trend_over_time.png – Fraud Trend Over Time (Line Plot).
+- Fraud vs. Non-Fraud Count Plot.
+- Fraud by Location.
 
 10.  Fraud Visualization
 
 - Fraud trends are visualized using:
-    -  fraud_vs_nonfraud.png – Fraud vs. Non-Fraud Transactions (Bar Chart).
-    -  fraud_vs_amount.png – Fraud Transactions by Amount (Boxplot).
-    -  fraud_trend_over_time.png – Fraud Trend Over Time (Line Plot).
-    -  fraud_vs_amount_histogram.png – Transaction Amounts for Fraud vs. Non-Fraud (Histogram).
-    -  fraud_location_heatmap.png – Fraud by Location (Heatmap).
-    -  fraud_percentage_pie.png – Fraud Percentage (Pie Chart).
-    -  fraud_by_transaction_type.png – Fraud by Transaction Type (Bar Chart).
-
- ## Output Examples
-
-- Fraud Trends Over Time – A line chart showing how fraud occurrences change over different time periods.
-- Fraud by Transaction Amount – A boxplot visualizing fraudulent transactions across different amount ranges.
-- Fraud by Location – A heatmap highlighting high-risk fraud locations.
-- Fraud by Transaction Type – A bar chart showing which transaction types are more prone to fraud.
+    - Use the Fraud_visualization.py to analyze the data of the prediction csv file.
+    - There are some key visualization to show the output of he csv file:
+        - Fraud cases per city.
+        - Stacked Bar Chart: Fraud Cases Per City (Random Forest).
+        - Fraud Predictions Across Transaction Types.
+        - Model Performance Bar Chart.
+    - We will use this all visualization to understand the fraud detected by the models.
 
 ## Error Handling
 
@@ -182,4 +155,5 @@ AI_UPI_Fraud_Detection/
 
 ## Conclusion
 
-- This AI-based UPI fraud detection system provides a structured approach to identifying fraudulent transactions using machine learning. By leveraging past transaction data, analyzing fraud trends, and applying predictive models, the system effectively classifies transactions as fraudulent or legitimate. Future improvements will focus on enhancing model accuracy, incorporating deep learning techniques, and enabling real-time fraud monitoring.
+- This project demonstrates the use of machine learning to detect fraudulent transactions based on past data. It uses models like XGBoost, Random Forest, and Logistic Regression for accurate classification. Key features include data preprocessing, fraud trend analysis, and error handling. XGBoost achieved the best performance among all models. 
+
